@@ -1,0 +1,5 @@
+Gangs of four Design patterns
+https://hillside.net/patterns
+https://git-scm.com/book/en/v2
+https://www.wiley.com/en-us/Coder+to+Developer%3A+Tools+and+Strategies+for+Delivering+Your+Software-p-9780782151251
+https://en.wikipedia.org/wiki/Numerical_Recipes

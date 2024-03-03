@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<htm lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Shibe data collection </h1>
+        <p id="description">Thank you for sharing your important views on shibas </p>
+    </div>
+        <hr>
+      </header>
+   <form id="survey-form">
+     <div id="form-group" class="form-group">
+       <label id="name-label" for="name">Name:</label><br>
+       <input type="text"
+        id="name"
+        placeholder="Enter your shiba's name"
+        required class="form-control"/>
+     </div>
+       <br>
+      <div id="form-group" class="form-group">
+       <label 
+        id="email-label"
+        for="email">
+        Email:
+       </label name="email">
+         <br>
+       <input type="email"
+        id="email"
+        placeholder="Enter the shiba's email"
+        required class="form-control"/>
+      </div>
+        <br>
+      <div id="form-group" class="form-group">
+       <label id="number-label"for="number">Age:</label><br>
+       <input type="number"
+        id="number"
+        placeholder="Enter the shibas age"
+        min="0" max="999999999999999999"
+        class="form-control"/>
+      </div>
+       <br>
+      <hr>
+      <div class="form-group">
+        <p>Which best describes your shiba?<p>
+        <select id="dropdown" name="shibatype" class="form-control" required>
+          <option value="Spirited">Spirited</option>
+          <option value="Friendly">Friendly</option>
+          <option value="Righteous">Righteous</option>
+          <option value="Omnipotent">Omnipotent</option>
+          <option value="Scheming">Scheming</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Is your shiba burnt?<p>
+        <label>
+           <input
+            name="burntshiba"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+            /> Yes </label>
+            <label>
+           <input
+            name="burntshiba"
+            value="No"
+            type="radio"
+            class="input-radio"
+            checked
+            /> No </label>
+         <div class="form-group">
+           <p>What are you favourite features of your shiba?</p>
+             <br>
+            <label>
+            Gigantic Brain
+            </label>
+            <input 
+            name="Gigantic-Brain"
+            value="Gigantic-Brain"
+            type="checkbox"
+            id="shibafeature"
+            />
+            <label>
+            Snoot
+            <input 
+            name="Snoot" 
+            type="checkbox"
+            id="shibafeature"
+            value="Snoot" 
+            >
+           
+            <label>
+            Peepers
+            </label>
+            <input name="Peepers"
+            value="Peepers" 
+            type="checkbox" 
+            id="shibafeature" 
+            />
+           
+            <label>
+            Airplane Ears
+            </label>
+            <input 
+            name="Airplane-Ears" 
+            value="Airplane-Ears"
+            type="checkbox"
+            id="shibafeature"
+            />
+          </div>
+          <hr>
+          <div
+           class="form-group">
+          </div>
+           Tell us more
+           <br>
+           <textarea placeholder="About your shiba"
+          value="tell-us-more"></textarea>
+          </div>
+          <br>
+          <div class="form-group">
+            <button type="submit"
+            id="submit"
+            class="submit-button"
+            >Submit</button>
+          </div>
+        </form>
+  </body>
+</html>

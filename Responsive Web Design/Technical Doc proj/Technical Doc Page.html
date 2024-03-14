@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Document Project</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <header>Navigation Bar
+            <a class="nav-link" href="#Lorem_ipsum">Lorem ipsum</a>
+            <a class="nav-link" href="#dolor">dolor</a>
+            <a class="nav-link" href="#Aliquam">Aliquam</a>
+            <a class="nav-link" href="#sed">sed</a>
+            <a class="nav-link" href="#posuere">posuere</a>
+        </header>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Lorem_ipsum">
+            <header id="Lorem_ipsum">Lorem ipsum</header>
+        </section>
+        <section class="main-section" id="dolor">
+            <header id="loremhead">dolor</header>
+            <p id="lorem">
+               <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu </li>
+               </ul> 
+                
+
+            </p>
+            <code>int addNumbers() {
+                // code
+                }</code>
+            <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+            <code>public class GCD {
+
+                public static void main(String[] args) {
+                    int n1 = 366, n2 = 60;
+                    int hcf = hcf(n1, n2);
+            
+                    System.out.printf("G.C.D of %d and %d is %d.", n1, n2, hcf);
+                }
+            
+                public static int hcf(int n1, int n2)
+                {
+                    if (n2 != 0)
+                        return hcf(n2, n1 % n2);
+                    else
+                        return n1;
+                }
+            }</code>
+            <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+
+        </section>
+        <section class="main-section" id="Aliquam">
+            <header id="loremhead">Aliquam</header>
+            <p id="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+            <p id="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+            <code>class GCD {
+                public static void main(String[] args) {
+              
+                  int n1 = 81, n2 = -153;
+              
+                  // Always set to positive
+                  n1 = ( n1 > 0) ? n1 : -n1;
+                  n2 = ( n2 > 0) ? n2 : -n2;
+              
+                  while(n1 != n2) {
+                      
+                    if(n1 > n2) {
+                      n1 -= n2;
+                    }
+                    
+                    else {
+                      n2 -= n1;
+                    }
+                  }
+                  
+                  System.out.println("GCD: " + n1);
+                }
+              }</code>
+            <p id="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+
+        </section>
+        <section class="main-section" id="sed">
+            <header id="loremhead">sed</header>
+            <p id="lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+            <code>class Main {
+                public static void main(String[] args) {
+              
+                  // find GCD between n1 and n2
+                  int n1 = 81, n2 = 153;
+                  
+                  while(n1 != n2) {
+                  
+                    if(n1 > n2) {
+                      n1 -= n2;
+                    }
+                    
+                    else {
+                      n2 -= n1;
+                    }
+                  }
+              
+                  System.out.println("GCD: " + n1);
+                }
+              }</code>
+            <p id="lorem2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+
+        </section>
+        <section class="main-section" id="posuere">
+            <header id="loremhead">posuere</header>
+            <p id="lorem3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+                <code>
+                    class Main {
+                        public static void main(String[] args) {
+                      
+                          // find GCD between n1 and n2
+                          int n1 = 81, n2 = 153;
+                          
+                          // initially set to gcd
+                          int gcd = 1;
+                      
+                          for (int i = 1; i <= n1 && i <= n2; ++i) {
+                      
+                            // check if i perfectly divides both n1 and n2
+                            if (n1 % i == 0 && n2 % i == 0)
+                              gcd = i;
+                          }
+                      
+                          System.out.println("GCD of " + n1 +" and " + n2 + " is " + gcd);
+                        }
+                      }  
+                </code>
+
+            </p>
+            <p id="lorem3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis felis arcu
+
+            </p>
+
+        </section>
+
+    </main>
+    
+</body>
+</html>

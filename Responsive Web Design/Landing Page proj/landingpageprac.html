@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cactus Land</title>
@@ -16,13 +17,89 @@
     </div>
     <nav id="nav-bar">
         <ul>
-            <li><a class="nav-link">Features</a></li>
-            <li><a class="nav-link">Location</a></li>
-            <li><a class="nav-link">Pricing</a></li>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#location">Location</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
         </ul>
     </nav>
 </header>
 <body>
+    <div class="container"></div>
+    <section id="hero">
+        <h2>A Prickly Friend for all</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+            <input id="submit" type="submit" value="Get started" class="btn"/>
+            </form>
+    </section>
+    <div class="container"></div>
+    <section id="features">
+        <h2 class="featureheader">
+        Cacti Features
+        </h2>
+        <ul>
+        <li class="cactifeatures">Thick waxy skin</li>
+        <li class="cactifeatures">Large fleshy stems</li>
+        <li class="cactifeatures">Spikes</li>
+        <li class="cactifeatures">Shallow, widespread roots</li>
+        </ul>
+    <section id="howtheygrow">
+    <h3 class="howtheygrowheader">How they Grow</h3>
+        <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube.com/embed/XJFiZmuFWWA"
+            frameborder="0"
+        ></iframe>
+    </section>
+    <section id="pricing" class="pricing">
+    <div class="product" class="pricing" id="pricing" id="smallcactus">
+        <h2>Lorem ipsum</h2>
+        <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ol>
+        
+
+    </div>
+    <div class="product" id="mediumcactus">
+        <h2>Lorem ipsum</h2>
+        <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ol>
+
+    </div>
+    <div class="product" id="largecactus">
+        <h2>Lorem ipsum</h2>
+        <ol>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+        </ol>
+    </div>
+</section>
+<section>
+<footer>
+    <div id="location">
+        <ul>
+            <li>Where?</li>
+        </ul>
+    </div>
+</footer>
+    
+    </div>
+</section>
+
+</section>
     
 </body>
 </html>

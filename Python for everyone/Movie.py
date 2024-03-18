@@ -11,6 +11,3 @@ while Favouritemovie == False:
         continue
 print("That was my favourite movie of all time.")
 print("I think I'll power down now.")
-    
-
-

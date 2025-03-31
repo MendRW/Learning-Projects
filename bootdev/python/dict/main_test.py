@@ -1,27 +1,42 @@
 from main import *
 
 run_cases = [
-    ("sword of justice", True),
-    ("bronze mace", False),
-    ("sword of slashing", True),
+    (["jackal", "kobold", "soldier"], {"jackal": 1, "kobold": 1, "soldier": 1}),
+    (["jackal", "kobold", "jackal"], {"jackal": 2, "kobold": 1}),
 ]
 
 submit_cases = run_cases + [
-    ("", False),
-    ("great axe", True),
-    ("silver bow", True),
-    ("golden spear", False),
-    ("spiked knuckles", True),
-    ("spellbook", True),
+    ([], {}),
+    (["jackal"], {"jackal": 1}),
+    (
+        [
+            "jackal",
+            "kobold",
+            "jackal",
+            "kobold",
+            "soldier",
+            "kobold",
+            "soldier",
+            "soldier",
+            "jackal",
+            "jackal",
+            "gremlin",
+            "jackal",
+            "jackal",
+        ],
+        {"jackal": 6, "kobold": 3, "soldier": 3, "gremlin": 1},
+    ),
+    (["jackal", "kobold", "gremlin"], {"jackal": 1, "kobold": 1, "gremlin": 1}),
+    (["jackal", "jackal", "jackal"], {"jackal": 3}),
+    (["gremlin", "gremlin", "gremlin"], {"gremlin": 3}),
 ]
 
 
 def test(input1, expected_output):
     print("---------------------------------")
-    print(f"Input:")
-    print(f" * Weapon: {input1}")
+    print(f"Inputs: {input1}")
     print(f"Expecting: {expected_output}")
-    result = is_top_weapon(input1)
+    result = count_enemies(input1)
     print(f"Actual: {result}")
     if result == expected_output:
         print("Pass")
